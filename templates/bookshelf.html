@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block content %}
-{% include "navbar.html" %}
+{% extends "base.html" %} {% block content %} {% include "navbar.html" %}
 
 <h4>{{ section.title }}</h4>
 {{ section.content | safe }}
@@ -16,5 +15,4 @@
   {%- endif %} {% endfor %} {% endfor %}
 </ul>
 
-{% include "navbar.html" %}
-{% endblock content %}
+{% include "navbar.html" %} {% endblock content %}

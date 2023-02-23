@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block content %}
-{% include "navbar.html" %}
+{% extends "base.html" %} {% block content %} {% include "navbar.html" %}
 
 <div class="book">
   <div>{{ page.content | safe }}</div>
@@ -16,5 +15,4 @@
   </div>
 </div>
 
-{% include "navbar.html" %}
-{% endblock content %}
+{% include "navbar.html" %} {% endblock content %}
