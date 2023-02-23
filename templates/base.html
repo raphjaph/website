@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="raphael" />
+    <meta name="description" content="just a random site on the interweb" />
+    <meta name="lightning" content="lnurlp:raphjaph@lntxbot.com" />
+    <meta property="og:image" content="/favicon.png" />
+    <title>raphael</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <!-- <link rel="stylesheet" href="/css/style.css" type="text/css"> -->
+    <link href="/font/inter-ui.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com//gry.min.css"> -->
+    <link rel="stylesheet" href="/css/gry.min.css" />
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 700px;
+      }
+
+      .spc {
+        margin-top: -20px;
+        padding-top: -10px;
+      }
+    </style>
+  </head>
+
+  <body class="flex a-items-center flex-column pa4 fw-b noselect">
+    <article class="container wf">
+      <header class="wf tc">
+        <h1>
+          <a
+            id="random-link"
+            title="take me somewhere random"
+            target="_blank"
+            onclick="getRandomLink()"
+            href="/"
+            class="cl-near-black"
+          ><h4>raphael</h4></a
+          >
+        </h1>
+      </header>
+      <section class="flex j-center">
+        <div class="sw5 py1 pr1">
+          <a href="/41E04F0D.txt"
+            ><img src="/images/key.svg" title="PGP key"
+          /></a>
+        </div>
+
+        <div class="sw5 py1 pr1">
+          <a href="mailto:raphjaph@protonmail.com">
+            <img src="/images/email.svg" title="mail" />
+          </a>
+        </div>
+
+        <div class="sw5 py1 pr1">
+          <a href="https://github.com/raphjaph">
+            <img src="/images/github.svg" title="my repo" />
+          </a>
+        </div>
+
+        <div class="sw5 py1 pr1">
+          <a href="https://t.me/raphjaph">
+            <img src="/images/telegram.png" title="please don't spam me" />
+          </a>
+        </div>
+      </section>
+
+      {% block content %}{% endblock content %} 
+
+      <footer class="wf">
+        <div class="tc mt4 mb2 f6">
+        last updated {{ now() | date(format="%e %B %Y") }}<br />
+        brought to you by
+        <a href="https://github.com/raphjaph/website">this code</a>
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>
+
+<script>
+  function getRandomLink() {
+    fetch("https://raph.ee/bookmarks.txt")
+      .then((r) => r.text())
+      .then(function (text) {
+        var lines = text.split("\n");
+        var randLineNum = Math.floor(Math.random() * lines.length);
+        var link = lines[randLineNum];
+        document.querySelectorAll("#random-link").forEach((element) => {
+          element.setAttribute("href", link);
+        });
+      });
+  }
+  getRandomLink();
+</script>

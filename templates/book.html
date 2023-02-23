@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+{% include "navbar.html" %}
+
+<div class="book">
+  <div>{{ page.content | safe }}</div>
+
+  <div>
+    <a href="/s/bookshelf/{{ page.components[1] }}/{{ page.assets }}">
+      {%- for asset in page.assets -%} {%- if asset is
+      matching(".m4b|.pdf|.epub.") -%} {%- endif %} {% endfor %} {%- for asset
+      in page.assets -%} {%- if asset is matching(".jpeg|.png|.cover.") -%} {%-
+      set cover = resize_image(path=asset, width=400, op="fit_width") -%}
+      <img src="{{ cover.url }}" />
+      {%- endif %} {% endfor %}
+    </a>
+  </div>
+</div>
+
+{% include "navbar.html" %}
+{% endblock content %}
