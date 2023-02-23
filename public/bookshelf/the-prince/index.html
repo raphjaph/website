@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="raphael" />
+    <meta name="description" content="just a random site on the interweb" />
+    <meta name="lightning" content="lnurlp:raphjaph@lntxbot.com" />
+    <meta property="og:image" content="/favicon.png" />
+    <title>raphael</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link href="/font/inter-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/gry.min.css" />
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 700px;
+      }
+    </style>
+  </head>
+
+  <body class="flex a-items-center flex-column pa3 fw-n">
+    <article class="container wf">
+       <nav class="wf tc f3">
+  <hr />
+  <a class="cl-near-black" href="/">home</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/about/">about</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/bookshelf/">bookshelf</a>
+  <hr />
+</nav>
+
+
+<div class="book">
+  <div><h1 id="the-prince-by-machiavelli">The Prince by Machiavelli</h1>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>Too diagnose problem early can be difficult but to tackle/solve it early is easier. Romans: &quot;there is no avoiding war; it can only be postponed to the advantage of others&quot;</p>
+</li>
+<li>
+<p>Support the weaker powers without increasing their strength, crush the powerful and do not allow them to win prestige.</p>
+</li>
+<li>
+<p>Centralization vs decentralization (localism); 15th century Turks vs 15th century France; Turkish emperor and his administrators vs french king and his nobles; difficult to conquer but easy to hold vs easy to conquer but difficult to hold
+-&gt; Alexander the Great conquered territories
+-&gt; Afghanistan very local loyalties</p>
+</li>
+<li>
+<p>Without opportunity prowess goes to waste but without prowess the opportunity passes without being seized
+-&gt; rephrase this</p>
+</li>
+<li>
+<p>Princedoms equivalent to modern day companies?</p>
+</li>
+<li>
+<p>Violence once intensely, Benefits gradually</p>
+</li>
+<li>
+<p>Build up Goodwill before adversity because during it a granted favor will seem disingenuous and will have little effect.</p>
+</li>
+<li>
+<p>We as humans add layers of abstraction. Things become commodities and we &quot;fight&quot; on a higher level; computer viruses for control of infrastructure for example.</p>
+</li>
+<li>
+<p>Machiavelli: &quot;Foundation of every state is good arms and good laws. You can't have good laws without good arms&quot;</p>
+</li>
+<li>
+<p>-&gt; Modern day equivalent?</p>
+</li>
+<li>
+<p>Medieval mercenaries equivalent to modern day hedgefunds/money manager?
+-&gt; agency problem
+-&gt; manage your own money or clear alignment of incentives</p>
+</li>
+<li>
+<p>Mercenary armies bring only slow, belated and feeble conquest but sudden startling defeat.
+-&gt; selling tail risk</p>
+</li>
+<li>
+<p>NDAs exist so corporations don't have to kill former employees</p>
+</li>
+<li>
+<p>Create your own armies, don't rely on mercenaries because they do not allign with you.</p>
+</li>
+<li>
+<p>Often being neutral is worse than picking a side even if your side loses</p>
+</li>
+<li>
+<p>All courses of action are risky:&quot; Prudence consists in being able to assess the nature of a particular threat and in accepting the lesser evil&quot;
+-&gt; applies to investing and trading</p>
+</li>
+<li>
+<p>If everyone can speak the truth to you the you lose respect. Therefore pick few that can speak the truth to you but always make up your own mind. P101</p>
+</li>
+<li>
+<p>Prosperity is ephemeral, continuous adaption is key. Change so your fortune doesn't change.</p>
+</li>
+<li>
+<p>Impetuous &gt; circumspect
+-&gt; take more chances, especially romantically/dating</p>
+</li>
+</ul>
+</div>
+
+  <div>
+    <a href="/s/bookshelf/the-prince/[/bookshelf/the-prince/the-prince-cover.jpg]"> <img src="http:&#x2F;&#x2F;localhost:1111&#x2F;processed_images&#x2F;e2fef8b36aa6c92400.jpg" /> 
+    </a>
+  </div>
+</div>
+
+<nav class="wf tc f3">
+  <hr />
+  <a class="cl-near-black" href="/">home</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/about/">about</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/bookshelf/">bookshelf</a>
+  <hr />
+</nav>
+  <footer class="wf">
+  <div class="tc mt3 f6">
+    last updated 23 February 2023<br />
+    brought to you by
+    <a
+      style="text-decoration: underline"
+      href="https://github.com/raphjaph/website"
+      >this code</a
+    >
+  </div>
+</footer>
+
+    </article>
+  </body>
+</html>
+
+<script>
+  function getRandomLink() {
+    fetch("https://raph.ee/bookmarks.txt")
+      .then((r) => r.text())
+      .then(function (text) {
+        var lines = text.split("\n");
+        var randLineNum = Math.floor(Math.random() * lines.length);
+        var link = lines[randLineNum];
+        document.querySelectorAll("#random-link").forEach((element) => {
+          element.setAttribute("href", link);
+        });
+      });
+  }
+  getRandomLink();
+</script>

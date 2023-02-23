@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="raphael" />
+    <meta name="description" content="just a random site on the interweb" />
+    <meta name="lightning" content="lnurlp:raphjaph@lntxbot.com" />
+    <meta property="og:image" content="/favicon.png" />
+    <title>raphael</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link href="/font/inter-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/gry.min.css" />
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 700px;
+      }
+    </style>
+  </head>
+
+  <body class="flex a-items-center flex-column pa3 fw-n">
+    <article class="container wf">
+       <nav class="wf tc f3">
+  <hr />
+  <a class="cl-near-black" href="/">home</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/about/">about</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/bookshelf/">bookshelf</a>
+  <hr />
+</nav>
+
+
+<div class="book">
+  <div><h1 id="snowcrash-by-neil-stephenson">Snowcrash by Neil Stephenson</h1>
+</div>
+
+  <div>
+    <a href="/s/bookshelf/snowcrash/[/bookshelf/snowcrash/Snow-Crash.jpg]">  
+    </a>
+  </div>
+</div>
+
+<nav class="wf tc f3">
+  <hr />
+  <a class="cl-near-black" href="/">home</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/about/">about</a>
+  |
+  <!-- &bull; -->
+  <a class="cl-near-black" href="/bookshelf/">bookshelf</a>
+  <hr />
+</nav>
+  <footer class="wf">
+  <div class="tc mt3 f6">
+    last updated 23 February 2023<br />
+    brought to you by
+    <a
+      style="text-decoration: underline"
+      href="https://github.com/raphjaph/website"
+      >this code</a
+    >
+  </div>
+</footer>
+
+    </article>
+  </body>
+</html>
+
+<script>
+  function getRandomLink() {
+    fetch("https://raph.ee/bookmarks.txt")
+      .then((r) => r.text())
+      .then(function (text) {
+        var lines = text.split("\n");
+        var randLineNum = Math.floor(Math.random() * lines.length);
+        var link = lines[randLineNum];
+        document.querySelectorAll("#random-link").forEach((element) => {
+          element.setAttribute("href", link);
+        });
+      });
+  }
+  getRandomLink();
+</script>
