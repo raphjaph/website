@@ -1,69 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:1111/</loc>
+        <loc>http://localhost:8080/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/about/</loc>
+        <loc>http://localhost:8080/about/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/</loc>
+        <loc>http://localhost:8080/bookshelf/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/antifragile/</loc>
+        <loc>http://localhost:8080/bookshelf/antifragile/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/baroque-cycle/</loc>
+        <loc>http://localhost:8080/bookshelf/baroque-cycle/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/bitcoin-whitepaper/</loc>
+        <loc>http://localhost:8080/bookshelf/bitcoin-whitepaper/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/cryptonomicon/</loc>
+        <loc>http://localhost:8080/bookshelf/cryptonomicon/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/green-philosophy/</loc>
+        <loc>http://localhost:8080/bookshelf/green-philosophy/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/how-to-lie-with-statistics/</loc>
+        <loc>http://localhost:8080/bookshelf/how-to-lie-with-statistics/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/lessons-of-history/</loc>
+        <loc>http://localhost:8080/bookshelf/lessons-of-history/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/snowcrash/</loc>
+        <loc>http://localhost:8080/bookshelf/snowcrash/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/sovereign-individual/</loc>
+        <loc>http://localhost:8080/bookshelf/sovereign-individual/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/strangers-to-ourselves/</loc>
+        <loc>http://localhost:8080/bookshelf/strangers-to-ourselves/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/superfunctional-training/</loc>
+        <loc>http://localhost:8080/bookshelf/superfunctional-training/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/the-prince/</loc>
+        <loc>http://localhost:8080/bookshelf/the-prince/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/three-body-problem/</loc>
+        <loc>http://localhost:8080/bookshelf/three-body-problem/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/unsettling-of-america/</loc>
+        <loc>http://localhost:8080/bookshelf/unsettling-of-america/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/use-of-knowledge/</loc>
+        <loc>http://localhost:8080/bookshelf/use-of-knowledge/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/when-money-dies/</loc>
+        <loc>http://localhost:8080/bookshelf/when-money-dies/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/why-information-grows/</loc>
+        <loc>http://localhost:8080/bookshelf/why-information-grows/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/wir-kinder-vom-bahnhof-zoo/</loc>
+        <loc>http://localhost:8080/bookshelf/wir-kinder-vom-bahnhof-zoo/</loc>
     </url>
     <url>
-        <loc>http://localhost:1111/bookshelf/working-in-public/</loc>
+        <loc>http://localhost:8080/bookshelf/working-in-public/</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/tv-shows/</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/tv-shows/cyberpunk-edgerunner/</loc>
     </url>
 </urlset>

@@ -1,5 +1,5 @@
-# base_url = "https://raph.ee"
-base_url = "http://localhost:1111"
+base_url = "https://raph.ee"
+# base_url = "http://localhost:1111"
 
 # Whether to automatically compile all Sass files in the sass directory
 # compile_sass = true
