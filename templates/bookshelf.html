@@ -3,16 +3,14 @@
 <h4>{{ section.title }}</h4>
 {{ section.content | safe }}
 
-<ul class="books" id="books">
+<div class="grid-s tc">
   {% for book in section.pages %} {% for asset in book.assets %} {% if asset is
   matching(".jpeg|.png|.cover.") %} {% set cover = resize_image(path=asset,
-  width=200, op="fit_width") %}
-  <li>
-    <a href="{{ book.permalink }}">
-      <img src="{{ cover.url }}" />
-    </a>
-  </li>
+  width=300, op="fit_width") %}
+  <a class="c4 pa2 " href="{{ book.permalink }}">
+    <img src="{{ cover.url }}" />
+  </a>
   {%- endif %} {% endfor %} {% endfor %}
-</ul>
+</div>
 
 {% include "navbar.html" %} {% endblock content %}
